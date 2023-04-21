@@ -64,14 +64,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // program button and reset board visuals
     button.addEventListener('click', () => {
-        board.populateGrid();
+        board.grid = board.populateGrid();
+        board.numRemaining = 17;
 
         const squares = document.querySelectorAll('.square');
 
+        // reset squares
         squares.forEach(square => {
             square.innerText = '';
             square.style.backgroundColor = 'inherit';
         })
+
+        //remove winning message
+        const message = document.querySelector('.message');
+        message.remove();
     })
 
 })
