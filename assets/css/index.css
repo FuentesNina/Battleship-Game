@@ -3,6 +3,12 @@ h1, p {
     text-align: center;
 }
 
+button {
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
 /* .boardGame {
     margin-right: auto;
     margin-left: auto;
