@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     // add message on top
                     const message = document.createElement('p');
                     message.setAttribute('class', 'message')
-                    message.innerText = 'YOU WIN!';
+                    message.innerText = 'YOU WON!';
                     boardGame.before(message);
                 }
             })
